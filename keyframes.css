@@ -1,0 +1,78 @@
+@keyframes logoAnim {
+    0%   { -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0; }
+    100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+}
+
+@keyframes logoAnim2 {
+    0%   { -webkit-transform: translateX(100px); transform: translateX(100px) skew(-10deg); opacity: 0; }
+    50%  { -webkit-transform: translateX(100px); transform: translateX(100px) skew(-10deg); opacity: 0; }
+    100% { -webkit-transform: translateX(0) skew(-10deg); transform: translateX(0) skew(-10deg); opacity: 1;     }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+}
+
+@keyframes fadeInDelay {
+    from { opacity: 0 }
+    50%  { opacity: 0 }
+    to   { opacity: 1 }
+}
+
+@keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-300px); transform: translateX(-300px) }
+    50%  { -webkit-transform: translateX(-300px); transform: translateX(-300px) }
+    to   { -webkit-transform: translateX(0); transform: translateX(0) }
+}
+
+@-webkit-keyframes moveFromRight {
+    from { -webkit-transform: translateX(300px); transform: translateX(300px) }
+    50%  { -webkit-transform: translateX(300px); transform: translateX(300px) }
+    to   { -webkit-transform: translateX(0); transform: translateX(0) }
+}
+
+@keyframes moveFromRight {
+    from { -webkit-transform: translateX(300px); transform: translateX(300px) }
+    50%  { -webkit-transform: translateX(300px); transform: translateX(300px) }
+    to   { -webkit-transform: translateX(0); transform: translateX(0) }
+}
+
+@keyframes scaleIn {
+    from { -webkit-transform: scale(0.1); transform: scale(0.1) }
+    to   { -webkit-transform: scale(1); transform: scale(1) }
+}
+
+@keyframes introOpenScaleIn {
+    from { -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0 }
+    85% { -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0 }
+    to   { -webkit-transform: scale(1); transform: scale(1); opacity: 1 }
+}
+
+@keyframes introIn {
+    from { -webkit-transform: translateX(-1000px) scale(0.1) }
+    to   { -webkit-transform: none }
+}
+
+@keyframes footerSlideIn {
+    from { -webkit-transform: translateY(50px); transform: translateY(50px) }
+    80%  { -webkit-transform: translateY(50px); transform: translateY(50px) }
+    to   { -webkit-transform: translateY(0); transform: translateY(0) }
+}
+
+@keyframes tabContentFadeIn {
+    from { left: -5%; opacity: 0; }
+    to   { left: 0; opacity: 1 }
+}
+
+@keyframes tabContentFadeIn2 {
+    from { -webkit-transform: translateZ(-100px); transform: translateZ(-100px); opacity: 0 }
+   30%   { -webkit-transform: translateZ(20px); transform: translateZ(20px) }
+    to   { -webkit-transform: none; transform: none; opacity: 1 }
+}
+
+@keyframes linksSlideIn {
+    from { -webkit-transform: translateX(160px); transform: translateX(160px) }
+    90%  { -webkit-transform: translateX(160px); transform: translateX(160px) }
+    to   { -webkit-transform: translateY(0); transform: translateY(0) }
+}

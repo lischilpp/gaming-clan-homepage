@@ -11,17 +11,15 @@ html, body {
 
 html {
     background: url(media/background.jpg) no-repeat rgba(0,0,0,0.1) fixed center;
-    -webkit-background-size: 125% 125%;
     background-size: 125% 125%;
     background-position: -12.5px -12.5px;
     background-color: #000000;
-    cursor: url(media/cursor.cur), default;
 }
 
 body {
+    font-family: 'Arial Black', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Arial Black', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -43,10 +41,6 @@ button {
     border-radius: 0;
 }
 
-::-moz-selection {
-     background-color: rgba(255, 0, 0, 0.8);
-}
-
 ::selection {
      background-color: rgba(255, 0, 0, 0.8);
 }
@@ -55,15 +49,8 @@ a {
     outline: none;
 }
 
-header {
-    /*background-color: #d11010;
-    background-image: gradient(linear, left top, left bottom, color-stop(0%,#db1313), color-stop(100%,#bf0f0f));
-    */
-}
-
 h1 {
     font-size: 6em;
-    /*text-shadow: 2px 2px #000000;*/
     width: 500px;
     height: 300px;
     display: block;
@@ -73,56 +60,11 @@ h1 {
     bottom: 0;
     right: 0;
     margin: auto;
-    /*box-reflect: below -100px gradient(linear, left top, left bottom, color-stop(50%,transparent), color-stop(100%,white)); */
 }
 
 h1 span {
     display: block;
     line-height: 150px;
-}
-
-@-webkit-keyframes logoAnim {
-    0%   { -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0; }
-    100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
-}
-
-@keyframes logoAnim {
-    0%   { -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0; }
-    100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
-}
-
-@-webkit-keyframes logoAnim2 {
-    0%   { -webkit-transform: translateX(100px); transform: translateX(100px); opacity: 0; }
-    50%  { -webkit-transform: translateX(100px); transform: translateX(100px); opacity: 0; }
-    100% { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1;     }
-}
-
-@keyframes logoAnim2 {
-    0%   { -webkit-transform: translateX(100px); transform: translateX(100px) skew(-10deg); opacity: 0; }
-    50%  { -webkit-transform: translateX(100px); transform: translateX(100px) skew(-10deg); opacity: 0; }
-    100% { -webkit-transform: translateX(0) skew(-10deg); transform: translateX(0) skew(-10deg); opacity: 1;     }
-}
-
-@-webkit-keyframes fadeIn {
-    from { opacity: 0 }
-    to   { opacity: 1 }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0 }
-    to   { opacity: 1 }
-}
-
-@-webkit-keyframes fadeInDelay {
-    from { opacity: 0 }
-    50%  { opacity: 0 }
-    to   { opacity: 1 }
-}
-
-@keyframes fadeInDelay {
-    from { opacity: 0 }
-    50%  { opacity: 0 }
-    to   { opacity: 1 }
 }
 
 .fadeIn {
@@ -204,30 +146,6 @@ h1 span {
     transform: skew(-10deg);
 }
 
-@-webkit-keyframes moveFromLeft {
-    from { -webkit-transform: translateX(-300px); transform: translateX(-300px) }
-    50%  { -webkit-transform: translateX(-300px); transform: translateX(-300px) }
-    to   { -webkit-transform: translateX(0); transform: translateX(0) }
-}
-
-@keyframes moveFromLeft {
-    from { -webkit-transform: translateX(-300px); transform: translateX(-300px) }
-    50%  { -webkit-transform: translateX(-300px); transform: translateX(-300px) }
-    to   { -webkit-transform: translateX(0); transform: translateX(0) }
-}
-
-@-webkit-keyframes moveFromRight {
-    from { -webkit-transform: translateX(300px); transform: translateX(300px) }
-    50%  { -webkit-transform: translateX(300px); transform: translateX(300px) }
-    to   { -webkit-transform: translateX(0); transform: translateX(0) }
-}
-
-@keyframes moveFromRight {
-    from { -webkit-transform: translateX(300px); transform: translateX(300px) }
-    50%  { -webkit-transform: translateX(300px); transform: translateX(300px) }
-    to   { -webkit-transform: translateX(0); transform: translateX(0) }
-}
-
 #info, #member {
     font-size: 1.5em;
     color: #FFFFFF;
@@ -242,10 +160,6 @@ h1 span {
     border-bottom: 2px solid red;
     padding-top: 20px;
 }
-
-/*#info:hover, #member:hover {
-    background-color: rgba(255, 0, 0, 0.1);
-}*/
 
 #info {
     left: 0;
@@ -281,16 +195,6 @@ h1 span {
     margin: auto;
 }
 
-@-webkit-keyframes scaleIn {
-    from { -webkit-transform: scale(0.1); transform: scale(0.1) }
-    to   { -webkit-transform: scale(1); transform: scale(1) }
-}
-
-@keyframes scaleIn {
-    from { -webkit-transform: scale(0.1); transform: scale(0.1) }
-    to   { -webkit-transform: scale(1); transform: scale(1) }
-}
-
 #description {
     width: 380px;
     top: 550px;
@@ -316,30 +220,12 @@ h1 span {
     margin: 5px;
 }
 
-@-webkit-keyframes introOpenScaleIn {
-    from { -webkit-transform: scale(0.1); opacity: 0 }
-    85% { -webkit-transform: scale(0.1); opacity: 0 }
-    to   { -webkit-transform: scale(1); opacity: 1 }
-}
-
-@keyframes introOpenScaleIn {
-    from { -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0 }
-    85% { -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0 }
-    to   { -webkit-transform: scale(1); transform: scale(1); opacity: 1 }
-}
-
 #introOpen {
-    /*background-color: #000000;
-    background-image: -webkit-linear-gradient(top, #000000 0%,#111111 1%,#000000 50%,#111111 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(1%, #111111), color-stop(50%, #000000), to(#111111));
-    background-image: -webkit-linear-gradient(top, #000000 0%, #111111 1%, #000000 50%, #111111 100%);
-    background-image: linear-gradient(to bottom, #000000 0%,#111111 1%,#000000 50%,#111111 100%);*/
     background-color: transparent;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 2em;
     line-height: 2em;
-    vertical-align: middle;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
@@ -397,16 +283,6 @@ h1 span {
 #intro:target {
     visibility: visible;
     opacity: 1;
-}
-
-@-webkit-keyframes introIn {
-    from { -webkit-transform: translateX(-1000px) scale(0.1) }
-    to   { -webkit-transform: none }
-}
-
-@keyframes introIn {
-    from { -webkit-transform: translateX(-1000px) scale(0.1) }
-    to   { -webkit-transform: none }
 }
 
 #intro:target > .videoFrame {
@@ -497,18 +373,6 @@ footer:hover > ul {
     opacity: 1;
 }
 
-@-webkit-keyframes footerSlideIn {
-    from { -webkit-transform: translateY(50px); transform: translateY(50px) }
-    80%  { -webkit-transform: translateY(50px); transform: translateY(50px) }
-    to   { -webkit-transform: translateY(0); transform: translateY(0) }
-}
-
-@keyframes footerSlideIn {
-    from { -webkit-transform: translateY(50px); transform: translateY(50px) }
-    80%  { -webkit-transform: translateY(50px); transform: translateY(50px) }
-    to   { -webkit-transform: translateY(0); transform: translateY(0) }
-}
-
 footer .label {
     position: absolute;
     line-height: 50px;
@@ -592,16 +456,6 @@ footer ul input[type="radio"] {
     display: block;
 }
 
-@-webkit-keyframes tabContentFadeIn {
-    from { left: -5%; opacity: 0; }
-    to   { left: 0; opacity: 1 }
-}
-
-@keyframes tabContentFadeIn {
-    from { left: -5%; opacity: 0; }
-    to   { left: 0; opacity: 1 }
-}
-
 .tab-content {
     display: none;
     text-align: left;
@@ -629,18 +483,6 @@ footer ul input[type="radio"] {
     width: 600px;
     margin: 0 auto;
     display: block;
-}
-
-@-webkit-keyframes tabContentFadeIn2 {
-    from { -webkit-transform: translateZ(-100px); transform: translateZ(-100px); opacity: 0 }
-   30%   { -webkit-transform: translateZ(20px); transform: translateZ(20px) }
-    to   { -webkit-transform: none; transform: none; opacity: 1 }
-}
-
-@keyframes tabContentFadeIn2 {
-    from { -webkit-transform: translateZ(-100px); transform: translateZ(-100px); opacity: 0 }
-   30%   { -webkit-transform: translateZ(20px); transform: translateZ(20px) }
-    to   { -webkit-transform: none; transform: none; opacity: 1 }
 }
 
 .tab-content p, .tab-content img {
@@ -725,18 +567,6 @@ footer ul input[type="radio"] {
     -ms-user-select: none;      
     -webkit-user-select: none;      
     user-select: none;
-}
-
-@-webkit-keyframes linksSlideIn {
-    from { -webkit-transform: translateX(160px); transform: translateX(160px) }
-    90%  { -webkit-transform: translateX(160px); transform: translateX(160px) }
-    to   { -webkit-transform: translateY(0); transform: translateY(0) }
-}
-
-@keyframes linksSlideIn {
-    from { -webkit-transform: translateX(160px); transform: translateX(160px) }
-    90%  { -webkit-transform: translateX(160px); transform: translateX(160px) }
-    to   { -webkit-transform: translateY(0); transform: translateY(0) }
 }
 
 #links {
@@ -902,7 +732,6 @@ footer ul input[type="radio"] {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transition: 1s ease -webkit-transform, 1s ease opacity, 0s 1s ease visibility;
     transition: 1s ease transform, 1s ease opacity, 0s 1s ease visibility;
     opacity: 0;
     visibility: hidden;
@@ -923,8 +752,5 @@ footer ul input[type="radio"] {
     background-color: red;
     width: 0;
     height: 10px;
-    -webkit-transition: 1s ease width;
+    transition: 1s ease width;
 }
-
-
-
