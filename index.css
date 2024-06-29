@@ -68,40 +68,22 @@ h1 span {
 }
 
 .fadeIn {
-    -webkit-animation: 1s ease fadeIn;
     animation: 1s ease fadeIn;
 }
 
 .fadeInSlowDelay {
-    -webkit-animation: 3s ease fadeInDelay;
     animation: 3s ease fadeInDelay;
 }
 
 .noInteract {
-    -webkit-user-select: none;
     user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
-    -webkit-user-select: none;      
-    user-select: none;
-    -webkit-user-drag: none;
 }
 
 .noSelection {
-    -webkit-user-select: none;
     user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
-    -webkit-user-select: none;      
-    user-select: none;
 }
 
 .selectable {
-    -webkit-user-select: text;
-    user-select: text;  
-    -moz-user-select: text;    
-    -ms-user-select: text;      
-    -webkit-user-select: text;      
     user-select: text;
 }
 
@@ -121,28 +103,18 @@ h1 span {
 
 #moufaxHeader, #moufaxHeader h1 {
     letter-spacing: 5px;
-    -webkit-user-select: none;
     user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
-    -webkit-user-select: none;      
-    user-select: none;
-    -webkit-user-drag: none;
 }
 
 #moufaxName {
-    -webkit-animation: 0.5s logoAnim;
     animation: 0.5s logoAnim;
     color: #e5e512;
 }
 
 #moufaxDE {
     color: #CCCCCC;
-    -webkit-animation: 0.5s logoAnim2;
     animation: 0.5s logoAnim2;
     top: 250px;
-    -webkit-transform: skew(-10deg);
-    -ms-transform: skew(-10deg);
     transform: skew(-10deg);
 }
 
@@ -154,7 +126,6 @@ h1 span {
     height: 300px;
     top: 200px;
     background-color: rgba(29, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 5px #000000;
     box-shadow: 0 0 5px #000000;
     border-top: 2px solid red;
     border-bottom: 2px solid red;
@@ -163,14 +134,12 @@ h1 span {
 
 #info {
     left: 0;
-    -webkit-animation: 1.5s moveFromLeft;
     animation: 1.5s moveFromLeft;
     border-radius: 0 50px 50px 0px;
 }
 
 #member {
     right: 0;
-    -webkit-animation: 1.5s moveFromRight;
     animation: 1.5s moveFromRight;
     border-radius: 50px 0px 0px 50px;
 }
@@ -208,7 +177,6 @@ h1 span {
     background-color: transparent!important;
     color: #FFFFFF;
     padding: 20px;
-    -webkit-animation: 0.5s scaleIn;
     animation: 0.5s scaleIn;
 }
 
@@ -229,7 +197,6 @@ h1 span {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 1px 2px 10px #000000;
     box-shadow: 1px 2px 10px #000000;
     display: block;
     position: absolute;
@@ -240,7 +207,6 @@ h1 span {
     margin: auto;
     height: 60px;
     width: 600px;
-    -webkit-animation: 3.5s introOpenScaleIn;
     animation: 3.5s introOpenScaleIn;
 }
 
@@ -262,14 +228,12 @@ h1 span {
     z-index: 1000;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.5s ease all;
     transition: 0.5s ease all;
 }
 
 #intro::after {
     content: "";
     background: url(media/background.jpg);
-    -webkit-background-size: 125% 125%;
     background-size: 125% 125%;
     opacity: 0.2;
     top: 0;
@@ -286,11 +250,8 @@ h1 span {
 }
 
 #intro:target > .videoFrame {
-     -webkit-transform: translateY(0);
-     -ms-transform: translateY(0);
-     transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
-    -webkit-animation: 0.5s introIn;
     animation: 0.5s introIn;
 }
 
@@ -306,16 +267,12 @@ h1 span {
     background-color: transparent;
     border: none;
     box-shadow: 0 0 20px #000000;
-    -webkit-box-shadow: 0 0 20px #000000;
     z-index: 10;
 }
 
 #intro .videoFrame {
-    -webkit-transform: translateX(1000px) scale(0.5);
-    -ms-transform: translateX(1000px) scale(0.5);
     transform: translateX(1000px) scale(0.5);
     opacity: 0;
-    -webkit-transition: .5s ease all;
     transition: .5s ease all;
 }
 
@@ -335,7 +292,6 @@ h1 span {
 }
 
 #intro .close span {
-    -webkit-transition: 0.5s ease opacity;
     transition: 0.5s ease opacity;
     display: block;
     font-size: 0.5em;
@@ -352,20 +308,14 @@ footer {
     height: 800px;
     border-radius: 50px 50px 0px 0;
     background-color: rgba(0, 0, 0, 0.5);
-    -webkit-transform: translateY(805px);
-    -ms-transform: translateY(800px);
     transform: translateY(800px);
-    -webkit-transition: 0.5s ease -webkit-transform, 0.5s ease background-color, 1s ease -webkit-box-shadow;
     transition: 0.5s ease transform, 0.5s ease background-color, 0.5s ease box-shadow;
     z-index: 10;
 }
 
 footer:hover {
     background-color: rgba(0, 0, 0, 1);
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
-    -webkit-box-shadow: 0 0 3px #000000;
     box-shadow: 0 0 3px #000000, inset 0 0 100px red;
 }
 
@@ -379,12 +329,10 @@ footer .label {
     top: -80px;
     background-color: rgb(0,0,0);
     border-radius: 5px 5px 0px 0;
-    -webkit-box-shadow: inset 0 0 100px rgba(255, 0, 0, 0.5), 2px -1px 10px black;
     box-shadow: inset 0 0 100px rgba(255, 0, 0, 0.5), 2px -1px 10px black;
     color: white;
     padding: 0 30px;
     cursor: default;
-    -webkit-animation: 2s footerSlideIn;
     animation: 2s footerSlideIn;
 }
 
@@ -395,7 +343,6 @@ footer ul {
     list-style-type: none;
     display: block;
     opacity: 0.5;
-    -webkit-transition: 0.5s ease opacity;
     transition: 0.5s ease opacity;
 }
 
@@ -405,7 +352,6 @@ footer ul div::-webkit-scrollbar {
  
 footer ul div::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
     box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
 }
 
@@ -426,12 +372,10 @@ footer ul input[type="radio"] {
     background-color: #000000;
     border: 1px solid #FFFFFF;
     box-shadow: inset 0 0 10px red;
-    -webkit-box-shadow: inset 0 0 10px red;
     cursor: pointer;
     position: relative;
     font-weight: normal;
     opacity: 0.4;
-    -webkit-transition:  0.1s ease opacity;
     transition:  0.1s ease opacity;
 }
 
@@ -449,7 +393,6 @@ footer ul input[type="radio"] {
     border-bottom: 2px solid red!important;
     opacity: 1!important;
     box-shadow: inset 0 0 10px red, 0 10px 30px!important;
-    -webkit-box-shadow: inset 0 0 10px red, 0 10px 30px!important;
 }
        
 [id^=tab]:checked ~ [id^=tab-content] {
@@ -469,13 +412,7 @@ footer ul input[type="radio"] {
     top: 12%;
     left: 0;
     /*animation: 0.5s tabContentFadeIn;*/
-    -webkit-user-select: text;
     user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    -webkit-user-select: text;
-    user-select: text;
-    -webkit-perspective: 800px;
     perspective: 800px;
 }
 
@@ -486,15 +423,12 @@ footer ul input[type="radio"] {
 }
 
 .tab-content p, .tab-content img {
-    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-animation: 0.5s tabContentFadeIn2;
     animation: 0.5s tabContentFadeIn2;
 }
 
 .tab-content p {
     padding: 10px;
-    -webkit-box-shadow: 0 -1px 20px red;
     box-shadow: 0 -1px 20px red
 }
 
@@ -507,27 +441,20 @@ footer ul input[type="radio"] {
     top: -100px;
     border-radius: 200px;
     color: #FFFFFF;
-    -webkit-box-shadow: -1px 0 2px #FFFFFF;
     box-shadow: -1px 0 2px #FFFFFF;
     cursor: default;
-    -webkit-transition: 0.5s -webkit-transform;
     transition: 0.5s transform;
 }
 
 #contact .label {
     margin-top: 100px;
-    -webkit-transform: rotate(45deg) translateY(160px) translateX(-120px);
-    -ms-transform: rotate(45deg) translateY(160px) translateX(-120px);
     transform: rotate(45deg) translateY(160px) translateX(-120px);
     cursor: default;
     color: rgba(255, 255, 255, 0.5);
-    -webkit-transition: 0.2s ease color;
     transition: 0.2s ease color;
 }
 
 #contact:hover {
-    -webkit-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
     transform: translateX(-300px);
 }
 
@@ -543,7 +470,6 @@ footer ul input[type="radio"] {
     position: absolute;
     top: 100px;
     left: 50px;
-    -webkit-transition: 0s 0.3s border-bottom;
     transition: 0s 0.3s border-bottom;
 }
 
@@ -555,18 +481,10 @@ footer ul input[type="radio"] {
     margin: 10px;
     color: rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px rgba(255, 255, 255, 0.1);
-    -webkit-transform: rotate(-90deg) translateX(150px) translateY(120px);
-    -ms-transform: rotate(-90deg) translateX(150px) translateY(120px);
     transform: rotate(-90deg) translateX(150px) translateY(120px);
-    -webkit-animation: 3s fadeInDelay;
     animation: 3s fadeInDelay;
     cursor: default;
-    -webkit-user-select: none;
     user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
-    -webkit-user-select: none;      
-    user-select: none;
 }
 
 #links {
@@ -581,12 +499,10 @@ footer ul input[type="radio"] {
 }
 
 #links li:nth-child(1) {
-    -webkit-animation: 3s linksSlideIn;
     animation: 3s linksSlideIn;
 }
 
 #links li:nth-child(2) {
-    -webkit-animation: 3.1s linksSlideIn;
     animation: 3.1s linksSlideIn;
 }
 
@@ -597,19 +513,16 @@ footer ul input[type="radio"] {
     color: #FFFFFF;
     text-decoration: none;
     background-color: rgb(0,0,0);
-    -webkit-box-shadow: inset 0 0 10px red;
     box-shadow: inset 0 0 10px red;
     border-radius: 4px 0 0 4px;
     padding: 5px 10px;
     font-size: 1.4em;
-    -webkit-transition: 0.1s ease background-color, 0.1s ease color;
     transition: 0.1s ease background-color, 0.1s ease color;
 }
 
 #links a:hover {
     background-color: red;
     color: black;
-    -webkit-box-shadow: inset 0 0 10px black;
     box-shadow: inset 0 0 10px black;
 }
 
@@ -626,7 +539,6 @@ footer ul input[type="radio"] {
     font-size: 1.5em;
     padding-bottom: 30px;
     text-decoration: none;
-    -webkit-animation: 3s fadeInDelay;
     animation: 3s fadeInDelay;
 }
 
@@ -665,9 +577,7 @@ footer ul input[type="radio"] {
     left: 0;
     top: 0;
     z-index: 1000;
-    -webkit-transition: 1s ease height, 2s ease -webkit-box-shadow;
     transition: 1s ease height, 2s ease box-shadow;
-    -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 
@@ -677,7 +587,6 @@ footer ul input[type="radio"] {
     font-size: 3em;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 1s ease -webkit-transform, 1s ease opacity, 0s 1s ease visibility;
     transition: 1s ease transform, 1s ease opacity, 0s 1s ease visibility;
 }
 
@@ -687,7 +596,6 @@ footer ul input[type="radio"] {
     font-weight: bold;
     display: block;
     transition: .2s ease text-shadow;
-    -webkit-transition: .2s ease text-shadow
 }
 
 #videos h1 a:hover {
@@ -697,20 +605,17 @@ footer ul input[type="radio"] {
 #videos:target > h1 {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: 1s ease -webkit-transform, 3s 1s ease opacity, 0s 1s ease visibility;
     transition: 1s ease transform, 3s 1s ease opacity, 0s 1s ease visibility;
 }
 
 #videos:target {
     height: 100%;
-    -webkit-box-shadow: inset 0 -5px red, inset 0 0 50px red;
     box-shadow: inset 0 -5px #990000, inset 0 0 50px red;
 }
 
 #videos:target > .carouselContainer .carousel {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: 1s ease -webkit-transform, 3s 1s ease opacity, 0s 1s ease visibility;
     transition: 1s ease transform, 3s 1s ease opacity, 0s 1s ease visibility;
 }
 
@@ -725,12 +630,10 @@ footer ul input[type="radio"] {
 }
 
 #videos .carousel {
-    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     width: 100%;
     height: 100%;
     position: absolute;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: 1s ease transform, 1s ease opacity, 0s 1s ease visibility;
     opacity: 0;
@@ -742,9 +645,7 @@ footer ul input[type="radio"] {
     color: white;
     text-align: center;
     font-size: 5em;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-box-shadow: 0 0 10px red;
     box-shadow: 0 0 10px red;
 }
 
