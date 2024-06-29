@@ -404,14 +404,12 @@ footer ul input[type="radio"] {
     text-align: left;
     width: 100%;
     height: 82%;
-    /*overflow-y: auto;*/
     overflow-y: hidden;
     font-size: 1.25em;
     line-height: 1.8em;
     position: absolute;
     top: 12%;
     left: 0;
-    /*animation: 0.5s tabContentFadeIn;*/
     user-select: text;
     perspective: 800px;
 }
@@ -568,6 +566,7 @@ footer ul input[type="radio"] {
     color: white;
     text-decoration: none;
 }
+
 #videos {
     height: 0;
     width: 100%;
@@ -611,47 +610,4 @@ footer ul input[type="radio"] {
 #videos:target {
     height: 100%;
     box-shadow: inset 0 -5px #990000, inset 0 0 50px red;
-}
-
-#videos:target > .carouselContainer .carousel {
-    opacity: 1;
-    visibility: visible;
-    transition: 1s ease transform, 3s 1s ease opacity, 0s 1s ease visibility;
-}
-
-#videos .carouselContainer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    display: none;
-}
-
-#videos .carousel {
-    transform-style: preserve-3d;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: 1s ease transform, 1s ease opacity, 0s 1s ease visibility;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#videos .carousel figure {
-    position: absolute;
-    color: white;
-    text-align: center;
-    font-size: 5em;
-    backface-visibility: hidden;
-    box-shadow: 0 0 10px red;
-}
-
-#videos .progressBar {
-    background-color: red;
-    width: 0;
-    height: 10px;
-    transition: 1s ease width;
 }
