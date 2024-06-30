@@ -44,23 +44,10 @@ h1 {
     margin: auto;
 }
 
-h1 span {
-    display: block;
-    line-height: 150px;
-}
-
 p {
     margin: 30px 80px;
     text-align: center;
     font-size: 1.5em;
-}
-
-button {
-    border-radius: 0;
-}
-
-a {
-    outline: none;
 }
 
 footer {
@@ -199,17 +186,6 @@ footer ul input[type="radio"] {
     z-index: 10;
 }
 
-.fadeIn {
-    animation: 1s ease fadeIn;
-}
-
-.fadeInSlowDelay {
-    animation: 3s ease fadeInDelay;
-}
-
-.noInteract {
-    user-select: none;  
-}
 
 .noSelection {
     user-select: none;  
@@ -264,17 +240,21 @@ footer ul input[type="radio"] {
     box-shadow: 0 -1px 20px red
 }
 
-#moufaxHeader, #moufaxHeader h1 {
+#clan-name, #clan-name h1 {
     letter-spacing: 5px;
-    user-select: none;  
+    user-select: none;
 }
 
-#moufaxName {
+#clan-name span {
+    display: block;
+}
+
+#clan-name span:nth-child(1) {
     animation: 0.5s logoAnim;
     color: #e5e512;
 }
 
-#moufaxDE {
+#clan-name span:nth-child(2) {
     color: #CCCCCC;
     animation: 0.5s logoAnim2;
     top: 250px;
@@ -460,6 +440,10 @@ footer ul input[type="radio"] {
     font-size: 0.5em;
 }
 
+#tabview {
+    user-select: none;
+}
+
 #tabview label {
     display: block;
     float: left;
@@ -496,6 +480,7 @@ footer ul input[type="radio"] {
     box-shadow: -1px 0 2px #FFFFFF;
     cursor: default;
     transition: 0.5s transform;
+    animation: 3s ease fadeInDelay;
 }
 
 #contact .label {
@@ -523,20 +508,6 @@ footer ul input[type="radio"] {
     top: 100px;
     left: 50px;
     transition: 0s 0.3s border-bottom;
-}
-
-#copyright {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 10px;
-    color: rgba(0, 0, 0, 0.5);
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.1);
-    transform: rotate(-90deg) translateX(150px) translateY(120px);
-    animation: 3s fadeInDelay;
-    cursor: default;
-    user-select: none;  
 }
 
 #links {
